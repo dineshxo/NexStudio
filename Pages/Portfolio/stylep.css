@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,500&display=swap');
+
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	
+
+}
+
+
+#main-header{
+    background-color:#FB9F02;
+    
+    width: 100%;
+    position:fixed ;
+    top: 0px;
+    z-index: 1;
+}
+
+
+/* --------------------------------- Logo --------------------------------- */
+
+
+.logo{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 6px 16px;
+    font-family: 'Poppins',sans-serif;
+}
+
+/* ----------------------------------Nav bar-------------------------------- */
+
+
+#nav-bar {
+    margin-top: 20px;
+    float: right;
+    margin-right: 20px;
+
+}
+
+#nav-bar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#nav-bar li{
+    display: inline;
+    margin: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    cursor: pionter;
+}
+
+#nav-bar a:hover{
+	color: black ;
+	 }
+
+
+
+
+/* ---------------------------- Images ----------------------------*/
+
+.billboards{
+	margin-top:50px ;
+}
+
+
+.billboards img{
+	width: 80%;
+	height: auto;
+	margin-left: 10%;
+	margin-right: 10%;
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.billboards img:hover{
+	transform: scale(1.05);
+}
+
+
+
+/* -------------------------------- Grid -----------------------------*/
+
+.gallery{
+	padding: 10px;
+	max-width: 1100px;
+	margin: 15px auto;
+	background: #f2f2f2;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+	grid-auto-rows: 250px;
+	grid-auto-flow: dense;
+}
+
+.gallery img{
+	border-radius: 10px;
+	height: 100%;
+	width: 100%;
+}
+
+
+.gallery img:hover{
+	transform: scale(1.05);
+	box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.2) ;
+}
+
+
+
+
+
+/* --------------- Vertical -----------------*/
+
+.v-stretch{
+	grid-row: span 2;
+}
+
+/* --------------- Horizontal -----------------*/
+
+.h-stretch{
+	grid-column: span 2;
+}
+
+/* --------------- Vertical and Horizontal -----------------*/
+
+.big-stretch{
+	grid-row: span 2;
+	grid-column: span 2;
+}
+
+.gallery div img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/*------------------------------------------ Responsive ---------------------------------------------------------*/
+
+/* ----- Nav bar | logo  -------- */
+@media(max-width: 760px){
+    
+    #hero{margin-top:0px;
+
+    }
+    #main-header{
+        position: static;
+    }
+
+    .logo{
+        float: none;
+        height: 40px;
+    
+    }
+    #nav-bar{
+        float: none;
+}
+    #nav-bar a{
+        display: block;
+        text-align: center;}
+}
+
+/*------------------------ Grid ----------------------*/
+
+
+@media(max-width: 560px){
+	.v-stretch{
+		grid-row: span 1;
+	}
+
+	.h-stretch{
+		grid-column: span 1;
+	}
+
+	.big-stretch{
+		grid-column: span 1;
+		grid-row: span 1 ;
+	}
+}

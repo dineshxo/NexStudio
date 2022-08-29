@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,500&display=swap');
+
+
+
+
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins',sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ /* --------------------------- Main Header ---------------------------------*/
+#main-header{
+    background-color: rgba(185, 18, 46, 1.0);
+    color: black;
+    width: 100%;
+    position:fixed ;
+    top: 0px;
+    z-index: 1;
+}
+
+
+/* --------------------------------- Logo --------------------------------- */
+
+.logo{
+    float: left;
+    text-align: center;
+    padding: 6px 16px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+}
+
+/* ----------------------------------Nav bar-------------------------------- */
+
+#nav-bar {
+    margin-top: 20px;
+    float: right;
+    margin-right: 20px;
+
+}
+
+#nav-bar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#nav-bar li{
+    display: inline;
+    margin:10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    cursor: pionter;
+}
+
+#nav-bar a:hover{
+    color: yellow ;}
+
+/* ---------------------------------------- Body -----------------------------------------*/
+
+#hero{
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(img/main.jpg);
+    background-size: cover;
+    background-position: top;
+    height: 500px;
+    margin: 30px 0px;
+}
+
+
+.welcome-text{
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 60px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.welcome-text h1{
+    
+    font-size: 60px;
+    color: white;
+}
+.welcome-text p{
+    padding-top: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+/*--------------------------------------Services----------------------------------------------*/
+     .services{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        
+     }
+ .services h1{
+    font-size: 35px;
+    font-weight: 200px;
+    color: #D35400;
+ }
+
+
+.row{
+    margin: 5%;
+    display:flex;
+    justify-content: space-between;
+}
+
+.service-col{
+    flex-basis: 31%;
+    background:#FBDE58  ;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.service-col li{
+    list-style: none;
+}
+
+.service-col p{
+    font-size: 12px;
+    color: #717D7E ;
+}
+
+.services h2{
+   text-align: center;
+   margin: 10px 0;
+   color: #AD1457;
+ }
+
+.service-col:hover{
+    box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.5) ;
+    transform: scale(1.06);
+
+}
+.service-col button{
+     background-color: #FFAE0B;
+    font-weight: 400;
+    border: none;
+   /* border: 2px solid #FFAE0B; */
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.service-col button a{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+
+.service-col button:hover{
+       background-color: #AD1457;
+   
+      font-weight: 500;
+}
+
+.service-col button:hover a{
+       color: white;
+   
+      font-weight: 600;
+}
+
+
+
+/*------------------------- Banner -----------------------------*/
+
+.banner{
+    margin: 10px auto;
+    width: 80%;
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)),url(img/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 200px 0;
+
+}
+.banner h1{
+
+    color: white;
+    marging-bottom: 75px;
+    font-size: 30px;
+}
+
+/*------------------------- Packages -----------------------------*/
+
+.packages{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+
+}
+.packages h1{
+    font-size: 35px;
+    margin-bottom: 30px;
+    color:  #A04000;
+
+}
+
+.pack-col{
+    flex-basis: 32%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.pack-col img{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transition: 0.5;
+}
+
+.layer:hover{
+    background: rgba(256, 256, 256, 0.7);
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 600;
+    color: #EF6C00  ;
+    font-size: 30px;
+    bottom: 0px;
+    left: 50% ;
+    transform: translateX(-50%);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.layer:hover h3{
+    bottom: 50%;
+    opacity: 1;
+}
+
+
+/*------------------------- About Us -----------------------------*/
+
+
+.about{
+    width: 100%;
+    min-height: 90vh;
+   
+}
+
+.con{
+    width: 80%;
+    display:block;
+    margin: auto;
+    padding-top: 100px;
+}
+
+.content-section{
+    float: left;
+    width: 55%;
+
+}
+
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    float: right;
+    border-radius: 10px;
+}
+
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 22px;
+    color: #E53935  ;
+}
+
+.content-section .content h3{
+    margin-top: 20px;
+    color: #5d5d5d;
+    font-size: 25px;
+}
+
+.content-section .content p{
+    margin-top: 10px;
+    color: #5d5d5d;
+    font-size: 18px;
+    line-height: 1.5em;}
+
+.content-section .content .button{
+    margin-top: 20px;
+
+}
+
+.content-section .content .button a{
+    background-color: transparent;
+     font-weight: 400;
+    border: 2px solid #f9004d;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #blue;
+    font-size: 16px;
+
+    letter-spacing: 1.5px;
+}
+
+.content-section .content .button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+    border: 2px solid #f9004d;
+      font-weight: 500;
+}
+
+
+
+/* ------------------------------------- Responsive ------------------------------------------ */
+
+/* ----- Nav bar | logo | landing image -------- */
+@media(max-width: 760px){
+    
+    #hero{margin-top:0px;
+
+    }
+    #main-header{
+        position: static;
+    }
+
+    .logo{
+        float: none;
+        height: 40px;
+    
+    }
+    #nav-bar{
+        float: none;
+}
+    #nav-bar a{
+        display: block;
+        text-align: center;}
+}
+
+
+/* ---- Welcome text ------ */
+
+@media(max-width: 500px){
+   .welcome-text{
+    margin-top: 180px;
+   }
+    .welcome-text h1{
+    
+    font-size: 40px;
+    color: white;}
+
+    .logo{
+        font-size: 15px;
+    }
+}
+ 
+ /*------- Service boxes | Packages -----------*/
+
+ @media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+ }
+
+  @media(max-width: 300px){
+    .service-col h2{
+        font-size: 16px;
+    }
+ }
+
+/*-------- Banner ----------- */
+
+@media(max-width: 600px){
+    .banner h1{
+        font-size: 15px ;
+
+    }
+
+
+ /*----------- Services -----------*/
+ 
+ @media(max-width: 700px){
+    .layer h3{
+        font-size: 20px;
+    }
+
+
+ /*----------- About us ------------*/
+
+
+ @media(max-width:764px){
+    .con{
+    width: 80%;
+    padding-top: 50px;
+}
+
+.content-section{
+    float: none;
+    width: 100%;
+    display: block;
+    margin: auto;
+
+}
+.image-section{
+    float: none;
+    width: 100%;
+    margin-top: 30px;
+    display: block;
+}
+.content-section .title{
+    text-align: center;
+    font-size: 19px;
+
+}
+
+ }

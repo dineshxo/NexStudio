@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,500&display=swap');
+
+
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+ /* --------------------------- Main Header ---------------------------------*/
+#main-header{
+    background-color: #049CC1;
+    color: black;
+    width: 100%;
+    position:fixed ;
+    top: 0px;
+    z-index: 1;
+}
+
+
+/* --------------------------------- Logo --------------------------------- */
+
+.logo{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 6px 16px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+}
+
+/* ----------------------------------Nav bar-------------------------------- */
+
+#nav-bar {
+    margin-top: 20px;
+    float: right;
+    margin-right: 20px;
+
+}
+
+#nav-bar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#nav-bar li{
+    display: inline;
+    margin:10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    cursor: pionter;
+}
+
+#nav-bar a:hover{
+    color: yellow ;}
+
+
+ /*---------------------------------- Grid ----------------------------------------------*/   
+
+.price-grid{
+	margin-top: 50px;
+	padding: 30px;
+
+}
+
+.price-grid .service {
+	background-color: white;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: center;
+    box-shadow: 0 0 2px 0
+	
+
+}
+
+.service .title h3{
+	font-family: 'Poppins',sans-serif;
+	font-weight: bold;
+}
+
+.service img{
+	max-width: 100%;
+	border-radius: 5px;
+	
+
+}
+
+.service .btn button {
+	 background-color: transparent;
+    font-weight: 400;
+    border: 2px solid #FFAE0B;
+    border-radius: 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #blue;
+    font-size: 16px;
+     font-family: 'Poppins',sans-serif;
+     margin-top: 5px;
+}
+
+.service .btn button:hover{
+	   background-color: #FFAE0B;
+    color: #fff;
+    border: 2px solid #FFAE0B;
+      font-weight: 500;
+}
+
+
+.grid-items{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 15px;
+
+}
+
+.price-grid .service:hover {
+	transform: scale(1.03);
+	box-shadow: 0 0 5px 0;
+}
+
+
+
+
+
+/*----------------------------------- Responsive ----------------------------------------*/
+
+/* ----- Nav bar | logo  -------- */
+@media(max-width: 760px){
+    
+    #hero{margin-top:0px;
+
+    }
+    #main-header{
+        position: static;
+    }
+
+    .logo{
+        float: none;
+        height: 40px;
+    
+    }
+    #nav-bar{
+        float: none;
+}
+    #nav-bar a{
+        display: block;
+        text-align: center;}
+}     
+
+/*----------------------- Grid ----------------------------*/
+
+@media(max-width: 560px){
+    
+    .grid-items{
+        display: grid;
+       grid-template-columns: 1fr;
+
+    
+ }
+
+}

@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,500&display=swap');
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background: #154360;
+
+}
+
+ /* --------------------------- Main Header ---------------------------------*/
+#main-header{
+    background-color: #154360;
+ ;
+    color: black;
+    width: 100%;
+    position:fixed ;
+    top: 0px;
+    z-index: 1;
+}
+
+
+/* --------------------------------- Logo --------------------------------- */
+
+.logo{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 6px 16px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 14px;
+}
+
+/* ----------------------------------Nav bar-------------------------------- */
+
+#nav-bar {
+    margin-top: 20px;
+    float: right;
+    margin-right: 20px;
+
+}
+
+#nav-bar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#nav-bar li{
+    display: inline;
+    margin:10px 20px;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: 'Poppins',sans-serif;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    cursor: pionter;
+}
+
+#nav-bar a:hover{
+    color:#FFAE0B ;}
+
+
+
+
+
+
+
+
+
+
+/*------------------------- Whole section ----------------------*/
+
+.contact{
+	width: 100vw;
+	display: flex;
+	justify-content: center ;
+	background: #fff;
+	margin: 50px 0;
+}
+
+.contact > *{
+	width: 50%;
+} 
+
+
+
+
+/*------------------------- Address | Mobile | email ----------------------*/
+
+
+.contact .first-container{
+	background-image: url(img/1.jpg);
+	display: flex ;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.info div h3{
+	color: #FFAE0B  ;
+	font-size:25px ;
+	font-weight: 500;
+	line-height: 1.2;
+	padding-bottom: 10px;
+
+}
+
+.info div p{
+	max-width: 260px;
+	color: white;
+	font-size: 16px;
+	font-weight: 300;
+	padding-bottom: 10px;
+
+}
+
+/*------------------------- Contact us Form ----------------------*/
+
+.second-container{
+	padding: 5px 40px;
+}
+.second-container h2{
+	font-size: 30px ;
+	font-weight: 600;
+	color:#424242;
+	line-height: 1.5;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.second-container form{
+	display: flex;
+	flex-direction: column;
+}
+
+
+.second-container form .frm{
+	margin-bottom: 10px;	
+}
+
+.second-container form .frm *{
+	min-height: 50px;
+	padding: 0 10px;
+}
+
+.second-container form .frm label{
+	display: flex;
+	align-items: center;
+	width: 100%;
+	font-size: 17px;
+}
+
+.second-container form .frm input{
+	width: 100%;
+	margin-right: ;
+	border-radius: 10px;
+}
+
+.second-container form .frm textarea{
+	width: 100%;
+	resize: none;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+
+
+.second-container form .btn input{
+	 background-color: transparent;
+    font-weight: 400;
+    border: 2px solid #FFAE0B;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #blue;
+    font-size: 16px;
+}
+
+.second-container form .btn input:hover{
+	   background-color: #FFAE0B;
+    color: #fff;
+    border: 2px solid #FFAE0B;
+      font-weight: 500;
+}
+
+
+
+
+/*------------------------------------ Responsive ---------------------------------------*/
+
+/* ----- Nav bar | logo  -------- */
+@media(max-width: 760px){
+    
+    #hero{margin-top:0px;
+
+    }
+    #main-header{
+        position ;
+    }
+
+    .logo{
+        float: none;
+        height: 40px;
+    
+    }
+    #nav-bar{
+        float: none;
+}
+    #nav-bar a{
+        display: block;
+        text-align: center;}
+}
+
+
+/* ----------------------------------- Page -----------------------*/
+
+@media(max-width: 900px){
+	.contact{
+		flex-direction: column-reverse;
+		width: 90vw;
+	}
+	.contact > *{
+		width: 100%;
+	}
+
+    .first-container{
+    	padding: 40px 0;
+    }
